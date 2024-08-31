@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/harshal logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front End Developer</p>
+            <h1>Hi, I'm <span>Harshal</span><br>From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Harshal, a passionate front-end developer and video editor based in Pune.
+                     With over a year of experience in front-end development and two years in video editing and thumbnail design, 
+                     I bring creativity and technical expertise to every project I work on.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Video Editor</span><br>Long & Short Video Editing In After Effect</li>
+                        <li><span>Web Development</span><br>Front-end,JavaScript & Python</li>
+                        <li><span>Thumbnail Design</span><br>Creating engaging & attractive thumbnails</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Python</li>
+                        <li><span>2021 - 2024</span><br>Thumbnail Design in Photoshop</li>
+                        <li><span>2023 - 2024</span><br>Web development</li>
+                        <li><span>2020 - 2024</span><br>Video Editing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>current</span><br>Pursuing a Bachelor of Engineering in Electronics and Telecommunications.(ENTC)</li>
+                        <li><span>2022</span><br>HSC from AVM Pune.</li>
+                        <li><span>2020</span><br>SSC from NSV Pune.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Video Editing</h2>
+                <p>I create videos using Adobe After Effects that look great and capture attention. Whether you need smooth edits, cool animations, or special effects, I can help. My goal is to make your videos stand out, whether they're for YouTube, gaming, or any other purpose.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Thumbnail Design</h2>
+                <p>I design eye-catching thumbnails that make your content stand out. Using Adobe Photoshop, I create thumbnails that grab attention and encourage clicks. Whether it's for YouTube, gaming, or any other platform, I'll help your content get noticed.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Front-end Developer</h2>
+                <p>I build clean, responsive websites using HTML, CSS, and JavaScript. Whether you need a personal blog, business site, or portfolio, I create user-friendly designs that look great on any device. My goal is to help you make a strong online presence.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Thumbnail-work.png">
+                <div class="layer">
+                    <h3>Thumbnails</h3>
+                    <p>I design eye-catching thumbnails that make your content stand out.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a> <!---Extra Link for my work-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/editing-work.png">
+                <div class="layer">
+                    <h3>Video edits</h3>
+                    <p>I create videos using Adobe After Effects that look great and capture attention.</p>
+                    <a href="https://youtu.be/HMCLHrUNsSY?si=gxw6AGQkCj9PCUo4"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/frontend-wor.png">
+                <div class="layer">
+                    <h3>Front-end</h3>
+                    <p>I build clean, responsive websites using HTML, CSS, and JavaScript.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://sites.google.com/view/harshalthorat678/home?authuser=0
+        " class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> harshalthorat444@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>8767505476</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/devidas.thorat.3975/"><i class="fa-brands fa-facebook"></i></a>  
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/harshal__678/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/harshal-thorat-358b45320/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Harshal Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Harshal Thorat <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyx7KqSVqJfhjzwD6bn3IbgdY5pSB8bk174Qt7RrVDGIFjI4pB_6kcE_wJ8Dtet-YB-Mg/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
